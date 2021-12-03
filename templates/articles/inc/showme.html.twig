@@ -1,0 +1,21 @@
+{%extends 'base-back.html.twig'  %}
+{% block title %}Show{% endblock %}
+{% block body %}
+
+
+
+
+
+        <h1>{{ article.NumFacture}}</h1>
+        <p>{{ article.DatePaiement}}</p>
+        <p>{{ article.Montanttotalht}}</p>
+        <p>{{ article.montanttotalttc}}</p>
+
+    <hr>
+
+    <a href="/">Retour</a>
+    <a href="/article/pdf/{{ article.id }}" class="btn btn-dark">Imprimer</a>
+
+
+{% endblock %}
+

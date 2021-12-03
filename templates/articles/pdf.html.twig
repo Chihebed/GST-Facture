@@ -1,0 +1,16 @@
+
+{% block title %}pdf{% endblock %}
+{% block body %}
+
+<table>
+    {% for article in articles %}
+        {% if article.id == id %}
+
+        <tr>
+            <td>{{ article.NumFacture }}</td>
+            <td>{{ article.DatePaiement }}</td>
+            <td>{{ article.Montanttotalht }}</td>
+            <td>{{ article.Montanttotalttc }}</td>
+        </tr>  {% endif %}
+    {% endfor %} </table>
+{% endblock %}
